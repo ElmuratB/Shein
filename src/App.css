@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+.section-logo{
+  width: 100%;
+  background-color: blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Logotip {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  height: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Logo {
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navv {
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-left: 15px;
+  display: flex;
+  font-size: 7px;
+}
+
+.input {
+  height: 15px;
+}
+
+.Click {
+  width: 23px;
+  height: 21px;
+  border: 1px solid;
+  border-radius: 2px;
+  margin-right: 2px;
+  background-color: rgb(176, 176, 176);
+}
+
+.Click img {
+  padding-bottom: 1px;
+  padding-right: 1px;
+  width: 12px;
+  margin-right: 5px;
+
+}
+
+.chel img {
+  padding-right: 2px;
+  margin-top: 1px;
+  height: 12px;
+}
+
+.Nav {
+  margin-left: 15px;
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.Nav a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper-catigory{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.catigory_list a {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+.catigory_list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  float: left;
+  margin-top: 10px;
+  margin-left: 1%;
+  gap: 5px;
+  overflow-y: scroll;
+}
+.catigory-shop{
+  width: 80%;
+}
+.aaa{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  overflow-y: scroll;
+}
+.aaa div{
+  display: flex;
+  
+}
+.aaa li img{
+  width: 85px;
+  border-radius: 50%;
+  background-color: bisque;
+}
+.nadpis{
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 10px;
+  line-height: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.shop{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 25px;
+  width: 82%;
+  overflow-y: scroll;
+}
+.shop li img{
+  width: 80px;
+  border-radius: 50%;
+  background-color: bisque;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
