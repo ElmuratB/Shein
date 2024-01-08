@@ -85,21 +85,19 @@
   overflow-y: scroll;
 }
 .catigory-shop{
-  width: 80%;
+  width: 100%;
 }
 .aaa{
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 35px;
   overflow-y: scroll;
+  margin-left: 20px;
 }
-.aaa div{
-  display: flex;
-  
-}
+
 .aaa li img{
-  width: 85px;
+  width: 70px;
   border-radius: 50%;
   background-color: bisque;
 }
@@ -115,12 +113,12 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  gap: 25px;
-  width: 82%;
+  gap: 35px;
+  width: 100%;
   overflow-y: scroll;
 }
 .shop li img{
-  width: 80px;
+  width: 70px;
   border-radius: 50%;
   background-color: bisque;
 }
