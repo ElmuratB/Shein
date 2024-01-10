@@ -8,6 +8,7 @@ import Airpods from './Image/Airpod-Case.png'
 import Mir from './Image/mir.png'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Time from '../../shopping-time/shopping-t';
 
 import Grid from '@mui/material/Grid';
 
@@ -244,6 +245,7 @@ export default function Home() {
                </div>
             </div>
 
+            <Time />
          </section>
 
 

@@ -123,4 +123,14 @@
   background-color: bisque;
 }
 
+/* второй блок шоппинг */
 
+.shab{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Lexend Exa', sans-serif;
+  letter-spacing: 4px;
+  gap:10%;
+  font-size: 18px;
+}
