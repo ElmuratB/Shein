@@ -133,4 +133,8 @@
   letter-spacing: 4px;
   gap:10%;
   font-size: 14px;
+  background-color: rgb(255, 255, 255);
+}
+.sale {
+  width: 100%
 }

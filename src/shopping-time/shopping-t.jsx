@@ -5,6 +5,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 export default function Time() {
 
 
@@ -27,7 +32,7 @@ export default function Time() {
                 </div>
             </div>
 
-            <div>
+            <div className='Swipe'>
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={20}
@@ -55,9 +60,35 @@ export default function Time() {
                             <img src="//img.ltwebstatic.com/images3_ccc/2024/01/08/25/1704695945205f66011f35e6b1941df17a56572489.webp" alt="" style={{width: '100%'}}/>
                         </div>
                     </SwiperSlide>
+                    <SwiperSlide>
+                        <div>
+                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/15/d4/1705298330c2ed12e15868b34ed4868631605421c6.webp" alt="" style={{width: '100%'}}/>
+                        </div>
+                    </SwiperSlide>
                 </Swiper>
             </div>
 
+            <div className=''>
+                <img className='sale' src="//img.ltwebstatic.com/images3_ccc/2024/01/08/64/1704696996288d08cc637deb158b5d391c085d1a24_thumbnail_2000x.jpg" alt="" />
+            </div>
+
+            <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={3}>
+        {/* <Grid item xs>
+          <div>xs</div>
+        </Grid> */}
+        <Grid item xs={6}>
+          <div>
+            <div>
+                <li><img src="" alt="" /></li>
+            </div>
+          </div>
+        </Grid>
+        {/* <Grid item xs>
+          <div>xs</div>
+        </Grid> */}
+      </Grid>
+    </Box>
         </>
     )
 }
