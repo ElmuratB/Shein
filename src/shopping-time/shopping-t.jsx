@@ -43,52 +43,35 @@ export default function Time() {
                 >
                     <SwiperSlide>
                         <div>
-                            <img src="//img.ltwebstatic.com/images3_ccc/2023/12/15/1c/1702629944e3a4f30f7efe63cc8be8a97539f7a4fe.webp" alt="" style={{width: '100%'}}/>
+                            <img src="//img.ltwebstatic.com/images3_ccc/2023/12/15/1c/1702629944e3a4f30f7efe63cc8be8a97539f7a4fe.webp" alt="" style={{ width: '100%' }} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
-                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/12/55/1705054647ce57d6bdeb0a9e5bfdece0d7a99b1543_thumbnail_2000x.webp" alt="" style={{width: '100%'}} />
+                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/12/55/1705054647ce57d6bdeb0a9e5bfdece0d7a99b1543_thumbnail_2000x.webp" alt="" style={{ width: '100%' }} />
                         </div></SwiperSlide>
                     <SwiperSlide>
                         <div>
-                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/12/07/1705054633caf03d0aa5135e49f59ebe6fff3507be_thumbnail_2000x.webp" alt="" style={{width: '100%'}}/>
+                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/12/07/1705054633caf03d0aa5135e49f59ebe6fff3507be_thumbnail_2000x.webp" alt="" style={{ width: '100%' }} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
-                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/08/25/1704695945205f66011f35e6b1941df17a56572489.webp" alt="" style={{width: '100%'}}/>
+                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/08/25/1704695945205f66011f35e6b1941df17a56572489.webp" alt="" style={{ width: '100%' }} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
-                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/15/d4/1705298330c2ed12e15868b34ed4868631605421c6.webp" alt="" style={{width: '100%'}}/>
+                            <img src="//img.ltwebstatic.com/images3_ccc/2024/01/15/d4/1705298330c2ed12e15868b34ed4868631605421c6.webp" alt="" style={{ width: '100%' }} />
                         </div>
                     </SwiperSlide>
                 </Swiper>
             </div>
-
+            {/* Нижная картинка после свайпа */}
             <div className=''>
                 <img className='sale' src="//img.ltwebstatic.com/images3_ccc/2024/01/08/64/1704696996288d08cc637deb158b5d391c085d1a24_thumbnail_2000x.jpg" alt="" />
             </div>
-
-            <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={3}>
-        {/* <Grid item xs>
-          <div>xs</div>
-        </Grid> */}
-        <Grid item xs={6}>
-          <div>
-            <div>
-                <li><img src="" alt="" /></li>
-            </div>
-          </div>
-        </Grid>
-        {/* <Grid item xs>
-          <div>xs</div>
-        </Grid> */}
-      </Grid>
-    </Box>
+                  
         </>
     )
 }

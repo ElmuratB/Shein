@@ -8,14 +8,30 @@ import Airpods from './Image/Airpod-Case.png'
 import Mir from './Image/mir.png'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+
 import Time from '../../shopping-time/shopping-t';
+import Blok from '../../shopping-time/blok';
+import Sale from '../../shopping-time/flash.sale';
+
 
 import Grid from '@mui/material/Grid';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Home() {
    const[tabs,setTabs] = useState([])
+
+   const counter = useSelector((state)=>  state.counter) 
+   const dispatch = useDispatch()
+
+   const increment = ( ) =>{
+      dispatch({type:'INCREMENT'})
+   };
+   const decerment = ( ) =>{
+      dispatch({type: 'DECREMENT'});
+   };
+
    useEffect(()=> {
-      async function gettabs(){
+      async function getTabs(){
       const authAxios = axios.create({
          baseUrl: "https://unofficial-shein.p.rapidapi.com",
          params: {
@@ -43,6 +59,11 @@ export default function Home() {
 
    return (
       <>
+      <div>
+         <h1>Counter:{counter}</h1>
+         <button onClick={increment}>Increment</button>
+         <button onClick={decerment}>Decrement </button>
+      </div>
          <section className='section-logo'>
             <div className='Logo'>
                <img className='Logotip' src={Logo} alt="" />
@@ -170,7 +191,6 @@ export default function Home() {
                                     <li><img src="https://img.ltwebstatic.com/images3_abc/2023/06/05/16859483412988fbda31028676909edfd745006d13.png" alt="" /></li>
                                     <span className='nadpis'>Party wear</span>
                                  </div>
-
                               </div>
 
                            </div>
@@ -246,6 +266,8 @@ export default function Home() {
             </div>
 
             <Time />
+            <Blok />
+            <Sale />
          </section>
 
 
